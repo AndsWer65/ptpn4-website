@@ -26,7 +26,10 @@ export default function Navbar() {
             alt="Logo PTPN IV" 
             fill 
             sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-contain object-left" 
+            className="object-cover object-right md:object-center"
+            style={{
+                    objectPosition: typeof window !== "undefined" && window.innerWidth < 768 ? "85% 50%" : "50% 50%",
+            }}
             priority 
           />
         </div>
